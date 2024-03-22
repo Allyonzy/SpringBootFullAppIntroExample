@@ -1,0 +1,49 @@
+### Добавление customer
+
+POST localhost:8080/customers
+Content-Type: application/json
+
+{
+  "firstName": "test",
+  "lastName": "test"
+}
+
+### Добавление customer
+
+POST localhost:8080/customers
+Content-Type: application/json
+
+{
+  "firstName": "Артур",
+  "lastName": "Кинг"
+}
+
+### Чтение customers
+
+GET localhost:8080/customers
+
+### Изменение customer (запрос PUT)
+
+PUT localhost:8080/customers/3
+Content-Type: application/json
+
+{
+    "firstName": "Иван",
+    "lastName": "Иванов"
+}
+
+### Удаление customer по идентификатору
+
+DELETE localhost:8080/customers/2
+
+### Получение по шаблону со *
+
+GET localhost:8080/customers/1/getY
+
+### Получение по шаблону со *
+
+GET localhost:8080/customers/2/getSimpleCustomer
+
+### Получить по id с параметром
+
+GET localhost:8080/customers/byParams?id=2
