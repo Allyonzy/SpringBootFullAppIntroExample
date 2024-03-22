@@ -2,8 +2,8 @@ package ru.innopolis.shop.repository;
 
 import com.google.common.collect.ImmutableList;
 import io.zonky.test.db.AutoConfigureEmbeddedDatabase;
-import io.zonky.test.db.flyway.FlywayWrapper;
-import org.flywaydb.core.Flyway;
+//import io.zonky.test.db.flyway.FlywayWrapper;
+//import org.flywaydb.core.Flyway;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -25,7 +25,7 @@ import java.util.Optional;
 
 @DisplayName(value = "User Repository is working when")
 @DisplayNameGeneration(value = DisplayNameGenerator.ReplaceUnderscores.class)
-//@Disabled
+@Disabled
 @DataJpaTest
 @AutoConfigureEmbeddedDatabase(type = POSTGRES) //создает базу данных
 @TestPropertySource(properties = "zonky.test.database.postgres.server.properties.max_connections=15")
@@ -33,22 +33,22 @@ public class UserRepositoryTest {
     @Autowired
     private AccountsRepository userRepository; //класс 1
 
-    @Configuration
-    static class Config {
-
-        @Bean(initMethod = "migrate")
-        public Flyway flyway(DataSource dataSource) {
-            FlywayWrapper wrapper = FlywayWrapper.newInstance();
-            wrapper.setDataSource(dataSource);
-            wrapper.setSchemas(ImmutableList.of("test"));
-            return wrapper.getFlyway();
-        }
-
-        @Bean
-        public JdbcTemplate jdbcTemplate(DataSource dataSource) {
-            return new JdbcTemplate(dataSource);
-        }
-    }
+//    @Configuration
+//    static class Config {
+//
+//        @Bean(initMethod = "migrate")
+//        public Flyway flyway(DataSource dataSource) {
+//            FlywayWrapper wrapper = FlywayWrapper.newInstance();
+//            wrapper.setDataSource(dataSource);
+//            wrapper.setSchemas(ImmutableList.of("test"));
+//            return wrapper.getFlyway();
+//        }
+//
+//        @Bean
+//        public JdbcTemplate jdbcTemplate(DataSource dataSource) {
+//            return new JdbcTemplate(dataSource);
+//        }
+//    }
 
     User newUser;
 

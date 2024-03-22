@@ -89,24 +89,24 @@
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-            <version>9.8.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-maven-plugin -->
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-maven-plugin</artifactId>
-            <version>9.8.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.flywaydb</groupId>-->
+<!--            <artifactId>flyway-core</artifactId>-->
+<!--            <version>9.8.2</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.flywaydb/flyway-maven-plugin &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.flywaydb</groupId>-->
+<!--            <artifactId>flyway-maven-plugin</artifactId>-->
+<!--            <version>9.8.2</version>-->
+<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.flywaydb.flyway-test-extensions/flyway-spring-test -->
-        <dependency>
-            <groupId>org.flywaydb.flyway-test-extensions</groupId>
-            <artifactId>flyway-spring-test</artifactId>
-            <version>7.0.0</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.flywaydb.flyway-test-extensions</groupId>-->
+<!--            <artifactId>flyway-spring-test</artifactId>-->
+<!--            <version>7.0.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
