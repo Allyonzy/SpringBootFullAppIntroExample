@@ -185,17 +185,17 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-                <configuration>
-                    <user>${flyway.user}</user>
-                    <password>${flyway.password}</password>
-                    <schemas>
-                        <schema>${flyway.schemas}</schema>
-                    </schemas>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.flywaydb</groupId>-->
+<!--                <artifactId>flyway-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <user>${flyway.user}</user>-->
+<!--                    <password>${flyway.password}</password>-->
+<!--                    <schemas>-->
+<!--                        <schema>${flyway.schemas}</schema>-->
+<!--                    </schemas>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 
